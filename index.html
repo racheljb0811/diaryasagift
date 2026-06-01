@@ -20,14 +20,15 @@
 </nav>
   </header>
 
-<h1 class="hero index" >日記を贈ろう <p>あなたの何気ない一言、日々の積み重ねは、誰かへの贈り物になる</p></h1>
+<h1 class="hero index" ><strong>日記を贈ろう</strong><p>あなたの何気ない一言、日々の積み重ねは<br>誰かへの贈り物になる</p></h1>
    
 <main>
+
    <h1 class="main">日記の起源</h1>
-    <p class="main">日本最古の日記は紀貫之が手掛けた土佐日記です<br>
+    <p class="mains">日本最古の日記は紀貫之が手掛けた土佐日記です<br>
              紀貫之は男性でありながら、女性のふりをしてこの日記を綴りました。<br>
             なぜそのようなことをしたのでしょうか？<br>
-            当時、男性が文字を書く、つまり漢字を使うことは公的な記録でした。<br>
+            当時、男性が文字を書く、つまり漢字を使うことは公的な記録とみなされました。<br>
             したがって、彼は女性のふりをし、女性が用いる平仮名を使うことで、<br>
             自分だけの日々や想いを残そうとしたのです。<br>
           それほど、私たち一人一人の日常は価値あるものなのです。<br>
@@ -39,12 +40,13 @@
    <div class="main2 items">
 
     <div class="item">
-     <img src="img/教育・教室.webp" width="250" height="150">
-     <p><strong>成長日記</strong><br>努力の痕跡は、その先のあなたの財産になります。<br>資格取得やトレーニングの傍らに</p>
+     <img src="img/教育・教室.webp" width="300" height="200">
+     <p>成長日記<p>
+     <p>努力の痕跡は、その先のあなたの財産になります。<br>資格取得やトレーニングの傍らに</p>
     </div>
 
     <div class="item">
-     <img src="img/赤ちゃん.webp" width="250" height="150">
+     <img src="img/赤ちゃん.webp" width="300" height="200">
      <br>
      <p>感謝日記</p>
      <p>日々積み重なる感謝と愛おしさを綴りませんか？<br>
@@ -52,7 +54,7 @@
     </div>
 
 <div class="item">
-    <img src="img/毛筆　ふすま.webp" width="250" height="150">
+    <img src="img/毛筆　ふすま.webp" width="300" height="200">
     <br>
  <p>うた日記</p>
  <p>徒然なるままに、机に向かった時に生まれた言葉は<br>
@@ -62,14 +64,62 @@
 
   </div>
 
-    <center><h2>フォーム入力</h2></center>
-    <center><label><input type="radio" value="diary" name="number" checked>①</label>
-  <label><input type="radio" value="diary" name="number" checked>②</label>
-  <label><input type="radio" value="diary" name="number" checked>③</label></center>
-   <center> <button type="submit">ラッピング特典を受け取る</button></center>
 
-   <h2>店舗情報</h2>
-   <table>
+<main3>
+
+  <center><p>こちらから申し込むと、書き終えた日記を<br>
+    贈り物としてラッピング、配送の機能をお付けいたします。<br>
+  お申込みはこちらから<br>
+  ↓　↓　↓
+  </p></center>
+
+   <h2 class="main3">ご購入フォーム</h2>
+
+<form action="result.html" class="main3">
+<p>ご希望の日記<br>
+<select name="kind" ></option>
+  <option value="1">--選択してください--</option>
+  <option value="2">成長日記　（資格取得）</option>
+  <option value="3">成長日記　（トレーニング）</option>
+  <option value="4">感謝日記　（いつもありがとう）</option>
+  <option value="5">感謝日記　（生まれてきてくれて）</option>
+  <option value="6">うた日記　（和歌）</option>
+  <option value="7">うた日記　（詩）</option>
+
+</select>
+</p>
+
+<p>
+
+  お名前
+  <input type="text" name="subject" placeholder="鈴木　花子"><br>
+
+  ご住所
+  <input type="text" name="subject" placeholder="〇〇県〇〇市〇町〇‐〇"><br>
+
+  TEL　   
+  <input type="text" name="subject" placeholder="　"><br>
+
+  MELL 
+  <input type="text" name="subject" placeholder="　"><br>
+
+  <br>
+
+  当店からのお知らせメール<br>
+  <input type="radio" name="first" id="yes" value="yes" checked>受信する<br>
+  <input type="radio" name="first" id="no" value="no" checked>受信しない
+</p>
+
+<button type="submit">ラッピング特典を受け取る</button>
+</form>
+
+
+</main3>
+
+<main4>
+
+   <h2 class="main4">店舗情報</h2>
+   <table class="main4">
     <tr><th>住所</th>
     <td>〒123‐4321 　花畑県思い出市日記町5‐5</td></tr>
 
@@ -77,8 +127,11 @@
       <td>℡:050‐0321‐0123　mail:nikonikonikki@gift.com</td></tr>
    </table>
 
+</main4>
+
    </main>
-   <footer>
+
+<footer>
   <p>&copy;日記を贈ろう</p>
   <p>この商品は架空のものです</p>
    </footer>
