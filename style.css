@@ -11,10 +11,10 @@ body{margin: 0 0 0 0 ;}
 
 /*ヘッダー*/
 .nav ul{
-   margin: 30px  0 0 0;
-   padding: 0;
+   margin:0 0 0 0;
+   padding-top: 10px;
+   background-color: rgba(230, 192, 144, 0.781);
    list-style-type: none;
-
    display: flex;
    justify-content: center;
    gap: 40px;
@@ -33,28 +33,57 @@ body{margin: 0 0 0 0 ;}
    
 /*メイン*/
 
-.main{background-color: rgb(234, 220, 203);}
-p {color:rgb(118, 105, 105) (210, 206, 208);}
-h1{color:rgb(128, 111, 90);
-   font-size: x-large;}
+.main{background-color: rgb(234, 220, 203);
+      text-align: center;
+      margin: 0 0 0 0;
+      padding-top: 20px;
+      padding-bottom: 20px;}
 
-.main{text-align: center;
-   margin-top: 0px;
-   margin-bottom: 0px;
-     
-      }
+.mains{background-color: rgb(234, 220, 203);
+      text-align: center;
+      margin: 0 0 0 0;
+      padding-top: 20px;
+      padding-bottom: 40px;
+
+}
+p {color:rgb(118, 105, 105) (210, 206, 208);}
+h1{color:rgb(128, 111, 90);}
+
+
 
 .main2{text-align: center;
+      margin: 0 0 0 0;
+      padding-bottom: 20px;
+      padding-top: 20px;
       background-color: rgb(220, 204, 183);}
+
 
 .items{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    gap: 20px;
 }
+.item{
+   margin-top: 30px;
+   padding-bottom: 40px;
+
+}
    
+.main3{text-align: center;
+      margin: 0 auto;
+     
+      color: rgb(0, 0, 0)}
+
+
+/*フォーム*/
+input[type="text"]
+
+
+.main4{ background-color: beige;}
+
 /*フッタ―*/
-footer{text-align:center ;}
+footer{text-align:center ;
+      background-color: blanchedalmond;}
 .copyright{margin-top: 20px;
            margin-bottom: 0px;
            color: burlywood;
