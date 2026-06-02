@@ -34,6 +34,7 @@ body{margin: 0 0 0 0 ;}
 /*メイン*/
 
 .main{background-color: rgb(234, 220, 203);
+      background-size: cover;
       text-align: center;
       margin: 0 0 0 0;
       padding-top: 20px;
@@ -43,7 +44,7 @@ body{margin: 0 0 0 0 ;}
       text-align: center;
       margin: 0 0 0 0;
       padding-top: 20px;
-      padding-bottom: 40px;
+      padding-bottom: 20px;
 
 }
 p {color:rgb(118, 105, 105) (210, 206, 208);}
@@ -64,6 +65,7 @@ h1{color:rgb(128, 111, 90);}
    gap: 20px;
 }
 .item{
+   background-size: auto;
    margin-top: 30px;
    padding-bottom: 40px;
 
@@ -71,15 +73,13 @@ h1{color:rgb(128, 111, 90);}
    
 .main3{text-align: center;
       margin: 0 auto;
-     
+      padding: 10px;
+     background-color: rgb(238, 222, 200);
       color: rgb(0, 0, 0)}
 
 
-/*フォーム*/
-input[type="text"]
-
-
-.main4{ background-color: beige;}
+.main4{background-size: cover;
+      background-color: burlywood;}
 
 /*フッタ―*/
 footer{text-align:center ;
