@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -12,10 +12,10 @@
   <header>
 <nav class="nav">
   <ul>
-  <li> ホーム </li>
-  <li>商品紹介</li>
-  <li>オンラインストア</li>
-  <li>店舗情報</li>
+  <a href="index.html"><li> ホーム </li></a>
+  <a href="products.html"><li>商品紹介</li></a>
+  <a href="store.html"><li>オンラインストア</li></a>
+  <a href="#store_info"><li>店舗情報</li></a>
   </ul>
 </nav>
   </header>
@@ -25,14 +25,17 @@
 <main>
 
    <h1 class="main">日記の起源</h1>
-    <p class="mains">日本最古の日記は紀貫之が手掛けた土佐日記です<br>
-             紀貫之は男性でありながら、女性のふりをしてこの日記を綴りました。<br>
-            なぜそのようなことをしたのでしょうか？<br>
-            当時、男性が文字を書く、つまり漢字を使うことは公的な記録とみなされました。<br>
-            したがって、彼は女性のふりをし、女性が用いる平仮名を使うことで、<br>
-            自分だけの日々や想いを残そうとしたのです。<br>
-          それほど、私たち一人一人の日常は価値あるものなのです。<br>
-          あなたの"記録"を贈り物にしませんか？</p>
+    
+      <div class="mains">
+        <span id="ityped">
+        日本最古の日記は紀貫之が手掛けた土佐日記です<br>
+        紀貫之は男性でありながら、女性のふりをしてこの日記を綴りました。<br>
+        なぜそのようなことをしたのでしょうか？<br>
+        当時、男性が文字を書く、つまり漢字を使うことは公的な記録とみなされました。<br>
+        したがって、彼は女性のふりをし、女性が用いる平仮名を使うことで、<br>
+        自分だけの日々や想いを残そうとしたのです。<br>
+        それほど、私たち一人一人の日常は価値あるものなのです。<br>
+        あなたの"記録"を贈り物にしませんか？</span></div>
 
 
   <h1 class="main2">日記の種類</h1>
@@ -116,15 +119,14 @@
 
 </main3>
 
-<main4>
-
+<main4 id="store_info">
    <h2 class="main4">店舗情報</h2>
-   <table class="main4">
+   <table>
     <tr><th>住所</th>
     <td>〒123‐4321 　花畑県思い出市日記町5‐5</td></tr>
 
     <tr><th>お問い合わせ</th>
-      <td>℡:050‐0321‐0123　mail:nikonikonikki@gift.com</td></tr>
+      <td>℡:050‐0321‐0123　Mail:nikonikonikki@gift.com</td></tr>
    </table>
 
 </main4>
@@ -133,7 +135,13 @@
 
 <footer>
   <p>&copy;日記を贈ろう</p>
-  <p>この商品は架空のものです</p>
+  <p>この日記帳は架空の商品です</p>
    </footer>
+
+
+   <script>
+    
+   </script>
+
   </body>
 </html>
