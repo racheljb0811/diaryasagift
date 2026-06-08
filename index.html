@@ -2,66 +2,73 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日記を贈ろう</title>
-    <link rel="stylesheet" href="reset.css">
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header>
+
+  <div class="logo">
+    <img src="img/logo.jpg" alt="ロゴ" class="logo"  width="320" height="180">
+  </div>
+
 <nav class="nav">
   <ul>
   <a href="index.html"><li> ホーム </li></a>
-  <a href="products.html"><li>商品紹介</li></a>
+  <a href="#items"><li>商品紹介</li></a>
   <a href="store.html"><li>オンラインストア</li></a>
   <a href="#store_info"><li>店舗情報</li></a>
   </ul>
 </nav>
   </header>
 
-<h1 class="hero index" ><strong>日記を贈ろう</strong><p>あなたの何気ない一言、日々の積み重ねは<br>誰かへの贈り物になる</p></h1>
+<h1 class="hero index" ><strong>日記を贈ろう</strong>
+<p class="typingText"></p> 
+</h1>
    
+
 <main>
 
-   <h1 class="main">日記の起源</h1>
     
-      <div class="mains">
-        <span id="ityped">
-        日本最古の日記は紀貫之が手掛けた土佐日記です<br>
-        紀貫之は男性でありながら、女性のふりをしてこの日記を綴りました。<br>
-        なぜそのようなことをしたのでしょうか？<br>
+   <p class="main">
+    日本最古の日記は紀貫之が手掛けた土佐日記であると言われています。<br>
+    紀貫之は男性でありながら、女性のふりをしてこの日記を綴りました。<br>
+        なぜそのようなことをしたのでしょうか？<br><br>
         当時、男性が文字を書く、つまり漢字を使うことは公的な記録とみなされました。<br>
         したがって、彼は女性のふりをし、女性が用いる平仮名を使うことで、<br>
         自分だけの日々や想いを残そうとしたのです。<br>
         それほど、私たち一人一人の日常は価値あるものなのです。<br>
-        あなたの"記録"を贈り物にしませんか？</span></div>
+        あなたの"記録"を贈り物にしませんか？</p>
 
+  <h2 id="items" class="main2">何を贈る？</h2>
 
-  <h1 class="main2">日記の種類</h1>
-
-   <div class="main2 items">
+   <div class="items">
 
     <div class="item">
-     <img src="教育・教室.webp" width="300" height="200">
-     <p>成長日記<p>
-     <p>努力の痕跡は、その先のあなたの財産になります。<br>資格取得やトレーニングの傍らに</p>
+     <img src="img/classroom.webp"  alt="classroom" class="kirikae-img" data-src-a="img/classroom.webp" alt="classroom" data-src-b="img\running.jpg"  alt="running" width="300" height="200">
+     <p><a href="1item.html">成長日記</a></p>
+     <p>努力の痕跡は、その先のあなたの財産になります。<br>その轍を自分へのプレゼントにしませんか？<br>資格取得やトレーニングの傍らに。</p>
     </div>
 
     <div class="item">
-     <img src="赤ちゃん.webp" width="300" height="200">
+     <img src="img/baby.webp"  alt="baby" class="kirikae-img" data-src-a="img/baby.webp"  alt="baby" data-src-b="img\heart.jpg"  alt="heart" width="300" height="200">
      <br>
-     <p>感謝日記</p>
-     <p>日々積み重なる感謝と愛おしさを綴りませんか？<br>
-      大切な人、身近な人、新しく生まれた命に向けて</p>
+     <p><a href="2item.html">感謝日記</a></p>
+     <p>日々積み重なっていく感謝と愛おしさを綴りませんか？<br>
+      いつもそばにいる大切な人、新しく生まれた命に向けて<br>
+      一ヵ月から一年まで、期間を選べます。</p>
     </div>
 
 <div class="item">
-    <img src="毛筆　ふすま.webp" width="300" height="200">
+    <img src="img/garden.jpg"  alt="garden" class="kirikae-img" data-src-a="img/garden.jpg" data-src-b="img\writing.jpg"  alt="pen_and_paper" sowidth="300" height="200">
     <br>
- <p>うた日記</p>
- <p>徒然なるままに、机に向かった時に生まれた言葉は<br>
-    あなただけの文学作品になります</p>
+ <p><a href="3item.html">うた日記</a></p>
+ <p>ふとした時に生まれた言葉は<br>
+    あなただけの文学作品になります。<br>
+    詩集、歌集を贈りませんか？</p>
    </div>
 
 
@@ -70,7 +77,8 @@
 
 <main3>
 
-  <center><p>こちらから申し込むと、書き終えた日記を<br>
+  <center><p class="main2">
+    こちらからお申込みいただくと、書き終えた日記を<br>
     贈り物としてラッピング、配送の機能をお付けいたします。<br>
   お申込みはこちらから<br>
   ↓　↓　↓
@@ -79,6 +87,7 @@
    <h2 class="main3">ご購入フォーム</h2>
 
 <form action="result.html" class="main3">
+
 <p>ご希望の日記<br>
 <select name="kind" ></option>
   <option value="1">--選択してください--</option>
@@ -93,18 +102,19 @@
 </p>
 
 <p>
-
-  お名前
+ 
+  お客様情報<br><br>
+  お名前　
   <input type="text" name="subject" placeholder="鈴木　花子"><br>
 
-  ご住所
+  ご住所　
   <input type="text" name="subject" placeholder="〇〇県〇〇市〇町〇‐〇"><br>
 
-  TEL　   
-  <input type="text" name="subject" placeholder="　"><br>
+  TEL　　   
+  <input type="text" name="subject" placeholder="090-1234-5678"><br>
 
-  MELL 
-  <input type="text" name="subject" placeholder="　"><br>
+  MELL 　 
+  <input type="text" name="subject" placeholder="example@example.com"><br>
 
   <br>
 
@@ -114,6 +124,7 @@
 </p>
 
 <button type="submit">ラッピング特典を受け取る</button>
+
 </form>
 
 
@@ -123,10 +134,20 @@
    <h2 class="main4">店舗情報</h2>
    <table>
     <tr><th>住所</th>
-    <td>〒123‐4321 　花畑県思い出市日記町5‐5</td></tr>
+    <td>　〒123‐4321 　花畑県思い出市日記町5‐5</td></tr>
 
-    <tr><th>お問い合わせ</th>
-      <td>℡:050‐0321‐0123　Mail:nikonikonikki@gift.com</td></tr>
+    <tr><th>アクセス</th>
+    <td>　思い出駅から徒歩10分　バス停「日記町」から徒歩3分</td></tr>
+
+    <tr><th>電話番号</th>
+    <td>　050‐0321‐0123　</td></tr>
+   <tr><th>メール</th>
+     <td>　nikonikonikki@gift.com</td></tr>
+
+   <tr><th>営業時間</th>
+   <td>　10:00～18:00　定休日：水曜日</td></tr>
+     
+
    </table>
 
 </main4>
@@ -134,13 +155,62 @@
    </main>
 
 <footer>
-  <p>&copy;日記を贈ろう</p>
-  <p>この日記帳は架空の商品です</p>
+  <p>この日記帳は架空の商品です。</p>
    </footer>
 
 
    <script>
-    
+  const typingText = document.querySelector('.typingText');
+const text = 'あなたの何気ない一言、日々は、誰かへの贈り物になる。';
+let index = 1;
+
+setTimeout(typeText, 1000);
+
+/*一文字ずつ表示*/
+function typeText() {
+  typingText.textContent = text.slice(0, index);
+  if (index < text.length) {
+    index++;
+    const randomInterval = Math.floor(Math.random() * 350) + 50;
+    setTimeout(typeText, randomInterval);
+  } else {
+    setTimeout(eraseText, 1500);
+  }
+}
+/*一文字ずつ消去*/
+function eraseText() {
+  index--;
+  typingText.textContent = text.slice(0, index);
+  if (index > 0) {
+    setTimeout(eraseText, 100);
+  } else {
+    setTimeout(typeText, 1500);
+  }
+}
+
+(function() {
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    const events = isTouchDevice ? ['click'] : ['mouseover', 'mouseout'];
+
+    function handleImageEvent(event) {
+        const img = event.target;
+        const [srcA, srcB] = [img.dataset.srcA, img.dataset.srcB];
+
+        if (event.type === 'click') {
+            img.src = img.src.includes(srcA) ? srcB : srcA;
+        } else if (event.type === 'mouseover') {
+            img.src = srcB;
+        } else if (event.type === 'mouseout') {
+            img.src = srcA;
+        }
+    }
+
+    document.querySelectorAll('.kirikae-img').forEach(img => {
+        events.forEach(event => img.addEventListener(event, handleImageEvent));
+    });
+})();
+
+
    </script>
 
   </body>

@@ -1,19 +1,18 @@
 /*すべてのページに適応される設定*/
 @charset "utf-8";
-html{font-size: 16px;
+html{font-size: 18px;
    font-family: sans-serif;}
 p,li,td{line-height: 1.7;}
 body{margin: 0 0 0 0 ;}
 
 *{box-sizing: border-box;}
 
-@media(max-width:800px){}
+
 
 /*ヘッダー*/
 .nav ul{
    margin:0 0 0 0;
-   padding-top: 10px;
-   background-color: rgba(230, 192, 144, 0.781);
+   padding-top: 0px;
    list-style-type: none;
    display: flex;
    justify-content: center;
@@ -27,40 +26,56 @@ body{margin: 0 0 0 0 ;}
 
 .hero.index{margin: 0 0 0 0;
    padding: 287px;
-   background-image: url(木の机とノート.jpg)
+   color: rgb(68, 38, 22);
+   background-image: url(../img/note.jpg);}
 
+.typingText{
+      font-size: 20px;
+      color:rgb(77, 56, 30); 
+      text-align: center;}
+
+.typingText::after{
+      content: '|';
+      color: rgb(118, 105, 105);
+      animation: blink 1s infinite;
+}
+
+@keyframes blink{
+      0%,100%{opacity: 1;}
+      50%{opacity: 0;}
+}
+   
 /*メイン*/
 
-.main{background-color: rgb(234, 220, 203);
-      background-size: cover;
+
+.main{background:radial-gradient( circle, rgb(241, 240, 240), rgb(154, 146, 93), rgb(68, 38, 22));
+      color: rgb(68, 38, 22);
       text-align: center;
       margin: 0 0 0 0;
-      padding-top: 20px;
-      padding-bottom: 20px;}
+      padding-top: 40px;
+      padding-bottom: 40px;
 
-.mains{background-color: rgb(234, 220, 203);
-      text-align: center;
-      margin: 0 0 0 0;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      }
-p {color:rgb(118, 105, 105) (210, 206, 208);}
-h1{color:rgb(128, 111, 90);}
-
+}
 
 
 .main2{text-align: center;
+      color: rgb(68, 38, 22);
       margin: 0 0 0 0;
       padding-bottom: 20px;
       padding-top: 20px;
-      background-color: rgb(220, 204, 183);}
+      background-color: rgb(255, 255, 255);}
+      
+   
 
-
-.items{
+.items {
+   text-align: center;
+   margin: 0 auto;
+   background-color: rgba(154, 146, 93, 0.726);
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    gap: 20px;
 }
+
 .item{
    background-size: auto;
    margin-top: 30px;
@@ -68,26 +83,69 @@ h1{color:rgb(128, 111, 90);}
 
 }
    
-.main3{text-align: center;
+.main3{
+      text-align: center;
       margin: 0 auto;
       padding: 10px;
-     background-color: rgb(238, 222, 200);
-      color: rgb(0, 0, 0)}
+      background-color: rgba(154, 146, 93, 0.74);
+      color: rgb(68, 38, 22);}
 
+select {text-align: center;
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 20px; }
+
+input[type="text"]{
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(241, 240, 240);
+      color: rgb(68, 38, 22);
+}
+
+button {
+      width: 300px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(68, 38, 22);
+      color: rgb(241, 240, 240);
+      cursor: pointer;
+}
 
 .main4{background-size: cover;
-      background-color: burlywood;}
+      background-color: rgb(154, 146, 93);}
 
 /*フッタ―*/
 footer{text-align:center ;
-      background-color: blanchedalmond;}
-.copyright{margin-top: 20px;
-           margin-bottom: 0px;
-           color: burlywood;
-           }
+      color: rgb(241, 231, 219);
+      background-size: cover;
+      background-color: rgb(68, 38, 22);}
+
+           
 /*個別のスタイル*/
 
 /*index.html*/
 .items{text-align: center;}
+
+@media(max-width:800px){
+
+   .nav ul{
+      flex-wrap: wrap;
+      gap: 20px;
+   }
+   .logo{
+      text-align: center;
+      margin: 0 auto;
+   }
+   .hero.index{padding: 150px 20px;}
+   .main{background-size: cover;}
+   .main2{background-size: cover;}
+
+  .items {
+    grid-template-columns: 1fr;}
+}
 
 
