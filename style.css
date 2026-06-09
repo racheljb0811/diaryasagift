@@ -122,6 +122,8 @@ button {
 footer{text-align:center ;
       color: rgb(241, 231, 219);
       background-size: cover;
+      padding-top: 10px;
+      padding-bottom: 20px;
       background-color: rgb(68, 38, 22);}
 
            
