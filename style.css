@@ -118,7 +118,12 @@ button {
 }
 
 .main4{background-size: cover;
-      background-color: rgb(154, 146, 93);}
+       color: rgb(68, 38, 22);
+      background-color: rgb(154, 146, 93, 0.75);}
+
+table{color: rgb(68, 38, 22);
+      background-color: rgb(241, 240, 240);
+      padding: 20px;}
 
 /*フッタ―*/
 footer{text-align:center ;
