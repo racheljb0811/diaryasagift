@@ -92,6 +92,16 @@ body{margin: 0 0 0 0 ;}
       background-color: rgba(154, 146, 93, 0.74);
       color: rgb(68, 38, 22);}
 
+.item-link{
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(68, 38, 22);
+      color: rgb(241, 240, 240);
+      cursor: pointer;
+}
+
 select {text-align: center;
       width: 300px;
       padding: 10px;
