@@ -61,49 +61,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    
 
 <main>
+  
+ <div class="main">
+  <p class="fade-box" >日本最古の日記は<br>紀貫之による『土佐日記』であると<br>言われています。</p> 
+  <p class="fade-box">紀貫之は男性でありながら<br>女性のふりをしてこの日記を<br>綴りました。</p> 
+  <p class="fade-box">なぜ女性のふりををしたのでしょうか？</p> <br>
+  <p class="fade-box">当時は男性が書く文字、<br>すなわち漢字を使うことは<br>公的な記録とみなされました。</p> 
+  <p class="fade-box">したがって彼は女性のふりをし<br>女性が用いる平仮名を使うことで、<br>自分だけの日々や想いを残そうとしたのです。</p> 
+  <p class="fade-box">それほど、私たち一人一人の日常<br>価値あるものなのです。</p> 
+  <p class="fade-box">あなたの"日々"を贈り物にしませんか？</p> 
+ </div>
 
-    
-   <p class="main">
-    日本最古の日記は紀貫之が手掛けた土佐日記であると言われています。<br>
-    紀貫之は男性でありながら、女性のふりをしてこの日記を綴りました。<br>
-    なぜそのようなことをしたのでしょうか？<br><br>
-    当時、男性が文字を書く、つまり漢字を使うことは公的な記録とみなされました。<br>
-    したがって、彼は女性のふりをし、女性が用いる平仮名を使うことで、<br>
-    自分だけの日々や想いを残そうとしたのです。<br>
-    それほど、私たち一人一人の日常は価値あるものなのです。<br>
-    あなたの"記録"を贈り物にしませんか？</p>
-
-  <h2 id="items" class="main2">何を贈る？</h2>
+  <h2 id="items" class="main2">どんな日々を贈ろう</h2>
 
    <div class="items">
 
     <div class="item">
      <img src="classroom.webp"  alt="classroom" class="kirikae-img" data-src-a="classroom.webp" alt="classroom" data-src-b="running.jpg"  alt="running" width="300" height="200">
-     <p><a href="1item.html" class="item-link">成長日記</a></p>
      <p>努力の痕跡は、その先のあなたの財産になります。<br>その轍を自分へのプレゼントにしませんか？<br>資格取得やトレーニングの傍らに。</p>
+     <p><a href="1item.html" class="item-link">成長日記</a></p>
     </div>
 
     <div class="item">
      <img src="baby.webp"  alt="baby" class="kirikae-img" data-src-a="baby.webp"  alt="baby" data-src-b="heart.jpg"  alt="heart" width="300" height="200">
      <br>
-     <p><a href="2item.html"class="item-link">感謝日記</a></p>
      <p>日々積み重なっていく感謝と愛おしさを綴りませんか？<br>
       いつもそばにいる大切な人、新しく生まれた命に向けて<br>
       一ヵ月から一年まで、期間を選べます。</p>
+     <p><a href="2item.html"class="item-link">感謝日記</a></p>
     </div>
 
 <div class="item">
     <img src="garden.jpg"  alt="garden" class="kirikae-img" data-src-a="garden.jpg" data-src-b="waka.jpg"  alt="pen_and_paper" sowidth="300" height="200">
     <br>
- <p><a href="3item.html" class="item-link">うた日記</a></p>
  <p>ふとした時に生まれた言葉は<br>
     あなただけの文学作品になります。<br>
     詩集、歌集を贈りませんか？</p>
+ <p><a href="3item.html" class="item-link">うた日記</a></p>
    </div>
-
 
   </div>
 
+  <div class="write">
+  <img src="img\write.jpg" class="main3-img1" alt="write" width="600" height="400">
+</div>
+  <br>
+  <div class="gift">
+  <img src="img\gift.jpg" class="main3-img2"  alt="present" width="600" height="400">
+</div>
 
 <main3>
 
@@ -217,6 +222,29 @@ function eraseText() {
     setTimeout(typeText, 1500);
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const observerOptions = {
+    root: null, // ビューポートを基準にする
+    rootMargin: "0px",
+    threshold: 0.2 // 要素が20%見えたら発火
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // 画面に入ったとき（イン）
+        entry.target.classList.add("is-active");
+      } else {
+        // 画面から出たとき（アウト）
+        entry.target.classList.remove("is-active");
+      }
+    });
+  }, observerOptions);
+
+  // .fade-box をすべて監視対象にする
+  document.querySelectorAll(".fade-box").forEach((el) => observer.observe(el));
+});
 
 (function() {
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
