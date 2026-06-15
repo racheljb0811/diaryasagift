@@ -89,7 +89,8 @@ body{margin: 0 0 0 0 ;}
 .items {
    text-align: center;
    color: rgb(68, 38, 22);
-   margin: 0 auto;
+   margin-top: 40px;
+   margin-bottom: 40px;
    background-color: rgba(154, 146, 93, 0.726);
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
@@ -100,35 +101,58 @@ body{margin: 0 0 0 0 ;}
    background-size: auto;
    margin-top: 50px;
    padding-bottom: 50px;
-
 }
+
+.kirikae-img{ border-radius: 5px;}
 
 .item-link{
       width: 150px;
       padding: 10px;
       border: none;
       border-radius: 5px;
-      background-color: rgb(68, 38, 22);
+      background-color: rgb(68, 38, 22,0.808);
       color: rgb(241, 240, 240);
+      font-family: serif;
       cursor: pointer;
       }
 
-.main3-img1
-{margin-top: 20px;
+.img01 
+{margin-top: 120px;
  margin-left: 20px;
  margin-bottom: 20px;
  border-radius: 5px;}
 
- .write{text-align: left;}
+ .write{text-align: left;
+}
 
 
-.main3-img2{
+.img02{
       margin-top: 20px;
       margin-right: 20px;
       margin-bottom: 20px;
       border-radius: 5px;}
 
 .gift{text-align: right;}
+
+.img02.displayed{
+  animation-delay: 0.3s;
+}
+.displayed{
+  animation: fadeUp 1s forwards;
+}
+
+@keyframes fadeUp{
+  0%{opacity:0; transform: translateY(0);}
+100%{opacity:1; transform: translateY(-100px);}
+}
+
+.main22{text-align: center;
+      color: rgb(68, 38, 22);
+      font-size: 20px;
+      margin: 0 0 0 0;
+      padding-bottom: 30px;
+      padding-top: 0px;
+      background-color: rgb(255, 255, 255);}
 
 
 .main3{
@@ -138,7 +162,7 @@ body{margin: 0 0 0 0 ;}
       background-color: rgba(154, 146, 93, 0.74);
       color: rgb(68, 38, 22);}
 
-
+.title{font-family: serif;}
 
 select {text-align: center;
       width: 300px;
@@ -196,20 +220,24 @@ footer{text-align:center ;
       text-align: center;
       margin: 0 auto;
    }
+   .typingText{font-size: 15px}
    .hero.index{padding: 150px 20px;}
    .main{background-size: cover;}
    .main2{background-size: cover;}
 
+   .fade-box{font-size: 15px;}
+
   .items {
+   font-size: 15px;
     grid-template-columns: 1fr;}
 
 .write{text-align: left;}
-.main3-img1{width: 300px ;
+
+.scroll-in {width: 300px ;
             height: 200px;}
 
 .gift{text-align: right;}
-.main3-img2{width: 300px ;
-            height: 200px;}
+
 
 table{ font-size: 12px;
       padding: 0 0 0 0;}
