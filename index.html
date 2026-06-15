@@ -195,6 +195,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
    <script>
+const password = prompt("パスワード：");
+  if (password !== "Rachel0811") {
+    alert("パスワードが違います。");
+    window.location.href = "about:blank"; // 白紙ページへ飛ばす
+  }
+  
   const typingText = document.querySelector('.typingText');
 const text = 'あなたの何気ない一言、日々は、誰かへの贈り物になる。';
 let index = 1;
