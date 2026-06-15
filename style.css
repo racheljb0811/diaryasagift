@@ -11,14 +11,15 @@ body{margin: 0 0 0 0 ;}
 
 /*ヘッダー*/
 .nav ul{
+    margin: 0 0 0 0;
+   color: rgb(68, 38, 22);
    background-color: rgb(154, 146, 93, 0.75);
-   margin:0 0 0 0;
-   padding-top: 0px;
    list-style-type: none;
    display: flex;
    justify-content: center;
    gap: 40px;
 }
+
 /*ヒーロー*/
 .hero{background-repeat: no-repeat;
    background-position: center;
@@ -49,29 +50,46 @@ body{margin: 0 0 0 0 ;}
 /*メイン*/
 
 
-.main{background:radial-gradient( circle, rgb(241, 240, 240), rgb(154, 146, 93), rgb(68, 38, 22));
+.main{background: linear-gradient(rgb(255, 255, 255), rgba(154, 146, 93, 0.808));
+      background-size: cover;
       color: rgb(68, 38, 22);
       text-align: center;
       margin: 0 0 0 0;
       padding-top: 40px;
       padding-bottom: 40px;
+　　　}
 
+.fade-box{
+      text-align: center;
+      font-size: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 3s ;
+      transform: translateY(100px);
+　　　}
+
+.fade-box.is-active {
+  /*要素を表示させる*/
+  opacity: 1;
+  visibility: visible;
+  /*元の位置に戻す*/
+  transform: translateY(0);
 }
 
 
 .main2{text-align: center;
       color: rgb(68, 38, 22);
       margin: 0 0 0 0;
-      padding-bottom: 20px;
-      padding-top: 20px;
+      padding-bottom: 40px;
+      padding-top: 40px;
       background-color: rgb(255, 255, 255);}
       
    
 
 .items {
    text-align: center;
-   margin: 0 auto;
    color: rgb(68, 38, 22);
+   margin: 0 auto;
    background-color: rgba(154, 146, 93, 0.726);
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
@@ -80,17 +98,10 @@ body{margin: 0 0 0 0 ;}
 
 .item{
    background-size: auto;
-   margin-top: 30px;
-   padding-bottom: 40px;
+   margin-top: 50px;
+   padding-bottom: 50px;
 
 }
-   
-.main3{
-      text-align: center;
-      margin: 0 auto;
-      padding: 10px;
-      background-color: rgba(154, 146, 93, 0.74);
-      color: rgb(68, 38, 22);}
 
 .item-link{
       width: 150px;
@@ -100,7 +111,34 @@ body{margin: 0 0 0 0 ;}
       background-color: rgb(68, 38, 22);
       color: rgb(241, 240, 240);
       cursor: pointer;
-}
+      }
+
+.main3-img1
+{margin-top: 20px;
+ margin-left: 20px;
+ margin-bottom: 20px;
+ border-radius: 5px;}
+
+ .write{text-align: left;}
+
+
+.main3-img2{
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;}
+
+.gift{text-align: right;}
+
+
+.main3{
+      text-align: center;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: rgba(154, 146, 93, 0.74);
+      color: rgb(68, 38, 22);}
+
+
 
 select {text-align: center;
       width: 300px;
@@ -129,7 +167,7 @@ button {
 
 .main4{background-size: cover;
        color: rgb(68, 38, 22);
-      background-color: rgb(154, 146, 93, 0.75);}
+      background-color: rgb(154, 146, 93, 0.8);}
 
 table{color: rgb(68, 38, 22);
       padding: 20px;}
@@ -164,6 +202,17 @@ footer{text-align:center ;
 
   .items {
     grid-template-columns: 1fr;}
+}
+.write{text-align: left;}
+.main3-img1{width: 300px ;
+            height: 200px;}
+
+.gift{text-align: right;}
+.main3-img2{width: 300px ;
+            height: 200px;}
+
+table{ font-size: 12px;
+      padding: 0 0 0 0;}
 }
 
 
