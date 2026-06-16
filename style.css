@@ -30,10 +30,11 @@ body{margin: 0 0 0 0 ;}
    padding: 287px;
    color: rgb(68, 38, 22);
    font-family: serif;
+　 font-size: 50px
    background-image: url(note.jpg);}
 
 .typingText{
-      font-size: 20px;
+      font-size: 30px;
       color:rgb(77, 56, 30); 
       text-align: center;}
 
@@ -222,7 +223,8 @@ footer{text-align:center ;
       margin: 0 auto;
    }
    .typingText{font-size: 15px}
-   .hero.index{padding: 150px 20px;}
+   .hero.index{padding: 150px 20px;
+              font-size:25px}
    .main{background-size: cover;}
    .main2{background-size: cover;}
 
