@@ -241,7 +241,7 @@ footer{text-align:center ;
 
   .items{
    font-size: 15px;
-    grid-template-columns: 1fr;}
+   grid-template-columns: 1fr;}
    
 .kirikae-img{width: 300px ;
             height: 200px;}
