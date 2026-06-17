@@ -183,13 +183,13 @@ input[type="text"]{
 }
 
 button {
-      width: 300px;
+      width: 400px;
       padding: 10px;
       border: none;
       border-radius: 5px;
       background-color: rgb(68, 38, 22);
       color: rgb(241, 240, 240);
-      font-size: 30px;
+      font-size: 25px;
       cursor: pointer;
 }
 
