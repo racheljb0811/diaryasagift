@@ -218,7 +218,6 @@ footer{text-align:center ;
 .items{text-align: center;}
 
 @media(max-width:800px){
-
    .nav ul{
       flex-wrap: wrap;
       font-size: 15px;
@@ -227,13 +226,12 @@ footer{text-align:center ;
      
    .logo{
       text-align: center;
-      margin: 0 auto;
-   }
+      margin: 0 auto;}
    
    .hero.index{padding: 150px 20px;
-              font-size:25px}
+              font-size:25px;}
     
-   .typingText{font-size: 15px}
+   .typingText{font-size: 15px;}
     
    .main{background-size: cover;}
    .main2{background-size: cover;}
