@@ -106,7 +106,7 @@ body{margin: 0 0 0 0 ;}
 .item{
    background-size: auto;
    margin-top: 50px;
-   padding-bottom: 50px;
+   margin-bottom: 50px;
 }
 
 .kirikae-img{ border-radius: 5px;}
