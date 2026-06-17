@@ -239,7 +239,7 @@ footer{text-align:center ;
 
    .fade-box{font-size: 15px;}
 
-  .items {
+  .items{
    font-size: 15px;
     grid-template-columns: 1fr;}
    
@@ -249,7 +249,7 @@ footer{text-align:center ;
 
 .write{text-align: left;}
 
-.scroll-in {width: 300px ;
+.scroll-in{width: 300px ;
             height: 200px;}
 
 .gift{text-align: right;}
