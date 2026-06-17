@@ -233,7 +233,8 @@ footer{text-align:center ;
     
    .typingText{font-size: 15px;}
     
-   .main{background-size: cover;}
+   .main{background-size: cover;
+         font-size: 15px;}
    .main2{background-size: cover;}
 
    .fade-box{font-size: 15px;}
