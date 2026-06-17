@@ -194,6 +194,8 @@ button {
 }
 
 .main4{background-size: cover;
+       padding-top: 30px;
+       padding-bottom: 30px;
        color: rgb(68, 38, 22);
       background-color: rgb(154, 146, 93, 0.8);}
 
