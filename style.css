@@ -86,7 +86,7 @@ body{margin: 0 0 0 0 ;}
       margin: 0 0 0 0;
       padding-bottom: 40px;
       padding-top: 40px;
-      background-color: rgb(255, 255, 255);}
+      background-color: rgb(246, 245, 234);}
       
    
 
@@ -115,7 +115,7 @@ body{margin: 0 0 0 0 ;}
       border: none;
       border-radius: 5px;
       background-color: rgb(68, 38, 22,0.808);
-      color: rgb(241, 240, 240);
+      color: rgb(246, 245, 234);
       font-family: serif;
       cursor: pointer;
       }
@@ -156,7 +156,7 @@ body{margin: 0 0 0 0 ;}
       margin: 0 0 0 0;
       padding-bottom: 30px;
       padding-top: 0px;
-      background-color: rgb(255, 255, 255);}
+      background-color: rgb(246, 245, 234);}
 
 
 .main3{
@@ -179,7 +179,7 @@ input[type="text"]{
       margin-bottom: 20px;
       border: none;
       border-radius: 5px;
-      background-color: rgb(241, 240, 240);
+      background-color: rgb(246, 245, 234);
       color: rgb(68, 38, 22);
 }
 
@@ -189,7 +189,7 @@ button {
       border: none;
       border-radius: 5px;
       background-color: rgb(68, 38, 22);
-      color: rgb(241, 240, 240);
+      color: rgb(246, 245, 234);}
       font-size: 25px;
       cursor: pointer;
 }
