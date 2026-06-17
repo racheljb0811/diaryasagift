@@ -228,9 +228,12 @@ footer{text-align:center ;
       text-align: center;
       margin: 0 auto;
    }
-   .typingText{font-size: 15px}
+   
    .hero.index{padding: 150px 20px;
               font-size:25px}
+    
+   .typingText{font-size: 15px}
+    
    .main{background-size: cover;}
    .main2{background-size: cover;}
 
