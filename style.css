@@ -251,7 +251,9 @@ footer{text-align:center ;
 
 .gift{text-align: right;}
 
-
+button{width: 300px;
+       font-size:18px;}
+   
 table{ font-size: 12px;
       padding: 0 0 0 0;}
 }
