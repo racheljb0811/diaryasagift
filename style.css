@@ -1,7 +1,8 @@
 /*すべてのページに適応される設定*/
 @charset "utf-8";
 html{font-size: 18px;
-   font-family: sans-serif;}
+font-family: sans-serif;
+background-color: rgb(246, 245, 234);
 p,li,td{line-height: 1.7;}
 body{margin: 0 0 0 0 ;}
 
