@@ -193,7 +193,7 @@ button {
       color: rgb(246, 245, 234);}
       font-size: 25px;
       cursor: pointer;
-}
+      }
 
 .main4{background-size: cover;
        color: rgb(68, 38, 22);
@@ -224,6 +224,7 @@ footer{text-align:center ;
       font-size: 15px;
       gap: 20px;
    }
+     
    .logo{
       text-align: center;
       margin: 0 auto;
