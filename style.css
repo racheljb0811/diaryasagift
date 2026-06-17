@@ -143,6 +143,12 @@ body{margin: 0 0 0 0 ;}
 .displayed{
   animation: fadeUp 1s forwards;
 }
+.scroll-in {
+      opacity: 0;
+}
+.scroll-in.displayed {
+      animation: fadeUp 1s forwards;
+}
 
 @keyframes fadeUp{
   0%{opacity:0; transform: translateY(0);}
