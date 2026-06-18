@@ -122,18 +122,28 @@ body{margin: 0 0 0 0 ;}
       cursor: pointer;
       }
 
-/* アニメーション前の初期状態を設定 */
-.scroll-in {
+
+/* --- スクロールインの初期状態とアニメーション設定 --- */
+
+/* 1. 動く前の共通の初期状態（ここをimg01やimg02より下に書くか、セレクタを強くします） */
+.write .scroll-in,
+.gift .scroll-in {
   opacity: 0;
-  transform: translateY(50px); /* 最初は50px下に下げておく */
-  transition: opacity 1s, transform 1s; /* なめらかに動かすための予備 */
+  transform: translateY(100px); /* アニメーションの0%と数値を合わせる */
+  visibility: hidden;
+  transition: opacity 1s, transform 1s, visibility 1s;
 }
 
-.img02.displayed{
-  animation-delay: 0.3s;
+/* 2. JavaScriptでクラスが付与されたときの状態 */
+.scroll-in.displayed {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* 元の位置に戻す */
 }
-.displayed{
-  animation: fadeUp 1s forwards;
+
+/* 3. 画像2（gift側）に少し遅延をかけたい場合の設定 */
+.img02.displayed {
+  transition-delay: 0.3s;
 }
      
 .img01 
