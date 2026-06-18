@@ -246,10 +246,10 @@ document.addEventListener("DOMContentLoaded", () => {
       if (entry.isIntersecting) {
         // 画面に入ったとき（イン）
         entry.target.classList.add("is-active");
-      } else {
-        // 画面から出たとき（アウト）
-        entry.target.classList.remove("is-active");
+  // 【追加】一度アクティブになったら、その要素の監視を解除する
+        observer.unobserve(entry.target);
       }
+// `else` の処理（画面から出たときにクラスを外す）は不要になるため削除
     });
   }, observerOptions);
 
