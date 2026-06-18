@@ -2,7 +2,6 @@
 @charset "utf-8";
 html{font-size: 18px;
 font-family: sans-serif;
-background-color: rgb(246, 245, 234);
 p,li,td{line-height: 1.7;}
      
 body{margin: 0 0 0 0 ;}
@@ -14,7 +13,7 @@ body{margin: 0 0 0 0 ;}
 
 /*ヘッダー*/
 .nav ul{
-    margin: 0 0 0 0;
+   margin: 0 0 0 0;
    color: rgb(68, 38, 22);
    background-color: rgb(154, 146, 93, 0.75);
    font-size: 20px;
