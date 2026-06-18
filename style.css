@@ -85,7 +85,7 @@ body{margin: 0 0 0 0 ;}
 
 
 .main2{text-align: center;
-      font-size: 20px;
+      font-size: 30px;
       color: rgb(68, 38, 22);
       margin: 0 0 0 0;
       padding-bottom: 40px;
@@ -257,7 +257,8 @@ footer{text-align:center ;
     
    .main{background-size: cover;
          font-size: 15px;}
-   .main2{background-size: cover;}
+   .main2{background-size: cover;
+         font-size: 20px;}
 
    .fade-box{font-size: 15px;}
 
@@ -276,14 +277,12 @@ footer{text-align:center ;
 
 .gift{text-align: right;}
 
-.main22{font-size: 20px;}
-
-.main3{font-size: 15px;}
+.main22{font-size: 15px;}
      
 button{width: 300px;
        font-size:18px;}
    
-table{ font-size: 12px;
+table{ font-size: 15px;
       padding: 0 0 0 0;}
 }
 
