@@ -242,7 +242,7 @@ footer{text-align:center ;
 @media(max-width:800px){
    .nav ul{
       flex-wrap: wrap;
-      font-size: 15px;
+      font-size: 13px;
       gap: 20px;
    }
      
