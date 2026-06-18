@@ -137,6 +137,7 @@ body{margin: 0 0 0 0 ;}
       opacity: 0;
       visibility: hidden;
       transition: opacity 3s ;
+     transition: opacity 3s, transform 1s, visibility 1s;
       transform: translateY(100px);
 }
 
@@ -150,8 +151,8 @@ body{margin: 0 0 0 0 ;}
 
 
 @keyframes fadeUp{
-  0%{opacity:0; transform: translateY(0);}
-100%{opacity:1; transform: translateY(-100px);}
+  0%{opacity:0; transform: translateY(100px);}
+100%{opacity:1; transform: translateY(0);}
 }
 
 .main22{text-align: center;
