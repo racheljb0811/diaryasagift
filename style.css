@@ -77,8 +77,6 @@ body{margin: 0 0 0 0 ;}
 .items {
    text-align: center;
    color: rgb(68, 38, 22);
-   margin-top: 40px;
-   margin-bottom: 40px;
    background-color: rgba(154, 146, 93, 0.726);
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
