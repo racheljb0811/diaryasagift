@@ -175,7 +175,7 @@ body{margin: 0 0 0 0 ;}
 
 .main22{text-align: center;
       color: rgb(68, 38, 22);
-      font-size: 20px;
+      font-size: 30px;
       margin: 0 0 0 0;
       padding-bottom: 30px;
       padding-top: 0px;
@@ -276,6 +276,10 @@ footer{text-align:center ;
 
 .gift{text-align: right;}
 
+.main22{font-size: 20px;}
+
+.main3{font-size: 15px;}
+     
 button{width: 300px;
        font-size:18px;}
    
