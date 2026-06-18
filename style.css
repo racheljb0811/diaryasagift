@@ -121,6 +121,21 @@ body{margin: 0 0 0 0 ;}
       font-family: serif;
       cursor: pointer;
       }
+
+/* アニメーション前の初期状態を設定 */
+.scroll-in {
+  opacity: 0;
+  transform: translateY(50px); /* 最初は50px下に下げておく */
+  transition: opacity 1s, transform 1s; /* なめらかに動かすための予備 */
+}
+
+.img02.displayed{
+  animation-delay: 0.3s;
+}
+.displayed{
+  animation: fadeUp 1s forwards;
+}
+     
 .img01 
 {margin-top: 120px;
  margin-left: 20px;
